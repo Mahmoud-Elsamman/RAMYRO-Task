@@ -33,10 +33,9 @@ namespace Backend.Services
                     _isProcessComplete = true;
                 }
                 await _hubContext.Clients.All.SendAsync("ReceiveProgress", i);
-                await Task.Delay(random.Next(50, 100));
+                if (i < 100) await Task.Delay(random.Next(50, 100));
             }
             _logger.LogInformation("Process completed. Data generated");
-
         }
 
         public (bool isComplete, string data) GetProcessData()
