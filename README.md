@@ -54,7 +54,7 @@ client/
 
 1. Navigate to the backend folder:
    ```bash
-   cd SignalRApp
+   cd server
    ```
 2. Install dependencies:
    ```bash
@@ -70,7 +70,7 @@ API will be available at: http://localhost:5150
 
 1. Navigate to the frontend folder:
    ```bash
-   cd signalr-app
+   cd client
    ```
 3. Install dependencies:
    ```bash
@@ -80,5 +80,5 @@ API will be available at: http://localhost:5150
    ```bash
    npm start
    ```
-  
 
+Frontend will be available at: http://localhost:3000
